@@ -13,6 +13,8 @@
                 <p>
                     <button (click)='addDislike(i)'>Dislike ({{quote.dislikes}})</button>  
                 </p>
+                <button (click)='viewDetails(i)'>View details</button>
+                <app-quote-details *ngIf ='quote.showDetails' [quote]='Quote'></app-quote-details>
             </ul>
         </div>
     </div>

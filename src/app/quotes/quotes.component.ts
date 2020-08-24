@@ -19,6 +19,9 @@ export class QuotesComponent implements OnInit {
   addDislike(index){
     this.quotes[index].dislikes=+1;
   }
+  viewDetails(index){
+    this.quotes[index].showDetails=!this.quotes[index].showDetails
+  }
   constructor() { }
 
   ngOnInit(): void {
