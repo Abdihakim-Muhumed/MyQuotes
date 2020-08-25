@@ -7,7 +7,7 @@ The application will allow users to post quotes and also vote on the quotes that
 
 # Setup Instructions:
 
-Click this link to launch the app: https://github.com/Abdihakim-Muhumed/MyQuotes
+Click this link to launch the app: https://abdihakim-muhumed.github.io/MyQuotes/
 
 # Technologies
  1.Angular
