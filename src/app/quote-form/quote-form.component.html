@@ -1,8 +1,7 @@
-<p>quote-form works!</p>
-<div class="container-fluid">
-    <h2 class="text-center">Post a quote</h2>
-    <hr>
-    <form (ngSubmit)='submitQuote()' #quoteForm= "ngForm">
+
+<div class="container-fluid" style="border: solid green;">
+    <h2 class="text-center" style="background-color: grey; color:yellowgreen;">Post a quote</h2>
+    <form (ngSubmit)='submitQuote()' #quoteForm= "ngForm" >
         <div class="form-group">
   
             <label for="username">Username</label>
@@ -27,6 +26,11 @@
               </div>
     
         </div>
-        <button type="submit" class="btn btn-success">Post Quote</button>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success">Post Quote</button>
+            </div>
+        </div>
     </form>
 </div>

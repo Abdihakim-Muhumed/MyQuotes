@@ -1,8 +1,8 @@
 <p>quotes works!</p>
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
-            <h2>Quotes:</h2>
+        <div class="col-md-6" style="border-top: solid brown;">
+            <h2 style="background-color: cornsilk; color:  black; text-align: center;" >Quotes:</h2>
             <ul  *ngFor = 'let quote of quotes; let i=index'>
                 <li appMostLiked> 
                     "{{quote.quotation}}"
@@ -15,6 +15,7 @@
                 </p>
                 <button (click)='viewDetails(i)'>View details</button>
                 <app-quote-details *ngIf ='quote.showDetails' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                <hr>
             </ul>
         </div>
         <div class="col-md-6">
