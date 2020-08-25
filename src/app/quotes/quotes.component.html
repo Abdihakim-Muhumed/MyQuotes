@@ -8,12 +8,10 @@
                     "{{quote.quotation}}"
                 </li>
                 <p>
-                    <button (click)='addLike(i)'>Like ({{quote.likes}})</button>  
-                </p>
-                <p>
-                    <button (click)='addDislike(i)'>Dislike ({{quote.dislikes}})</button>  
-                </p>
-                <button (click)='viewDetails(i)'>View details</button>
+                    <button (click)='addLike(i)'>Like</button>  ({{quote.likes}})
+                    <button (click)='addDislike(i)'>Dislike </button> ({{quote.dislikes}})  
+                    <button (click)='viewDetails(i)'>View details</button>
+                </p>                
                 <app-quote-details *ngIf ='quote.showDetails' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
                 <hr>
             </ul>

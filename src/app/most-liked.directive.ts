@@ -6,7 +6,7 @@ import { Directive, ElementRef} from '@angular/core';
 export class MostLikedDirective {
 
   constructor(private elem:ElementRef){
-    this.elem.nativeElement.style.textDecoration='line-through';
+    this.elem.nativeElement.style.color='red';
   }
 
 
